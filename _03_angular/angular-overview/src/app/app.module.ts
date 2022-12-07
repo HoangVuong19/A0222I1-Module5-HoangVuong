@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import {FormsModule} from "@angular/forms";
 import { ColorComponent } from './color/color.component';
+import { ArticleComponent } from './hackernews/article/article.component';
+import { LikeComponent } from './hackernews/like/like.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    ColorComponent
+    ColorComponent,
+    ArticleComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import {FormsModule} from "@angular/forms";
 import { ColorComponent } from './color/color.component';
 import { ArticleComponent } from './hackernews/article/article.component';
 import { LikeComponent } from './hackernews/like/like.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LikeComponent } from './hackernews/like/like.component';
     CalculatorComponent,
     ColorComponent,
     ArticleComponent,
-    LikeComponent
+    LikeComponent,
+    CountdownComponent
   ],
   imports: [
     BrowserModule,

@@ -4,11 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ColorComponent } from './color/color.component';
 import { ArticleComponent } from './hackernews/article/article.component';
 import { LikeComponent } from './hackernews/like/like.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,14 @@ import { CountdownComponent } from './countdown/countdown.component';
     ColorComponent,
     ArticleComponent,
     LikeComponent,
-    CountdownComponent
+    CountdownComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

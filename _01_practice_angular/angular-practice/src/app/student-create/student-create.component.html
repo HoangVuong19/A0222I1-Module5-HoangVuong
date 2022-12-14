@@ -1,0 +1,45 @@
+<div class="card border-info mt-4">
+  <div class="card-body">
+    <h4 class="card-title">Student Detail</h4>
+<!--            <form #studentForm = "ngForm" (ngSubmit)="createStudent(studentForm)">-->
+<!--              <div class="form-group">-->
+<!--                <label>Name: </label>-->
+<!--                <input ngModel type="text" class="form-group" name="name" required>-->
+<!--                <span style="color: red" *ngIf="studentForm.controls.name.touched && studentForm.controls.name.hasError('required')">name not null</span>-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label>Gender: </label>-->
+<!--                <input ngModel type="radio" value="0" name="gender">Female-->
+<!--                <input ngModel type="radio" value="1" name="gender">male-->
+<!--                <input ngModel type="radio" value="2" name="gender">LGBT-->
+<!--              </div>-->
+<!--              <div class="form-group">-->
+<!--                <label>Point: </label>-->
+<!--                <input ngModel type="number" class="form-group" name="point">-->
+<!--              </div>-->
+<!--              <button type="submit" class="btn bg-primary">Submit</button>-->
+<!--            </form>-->
+    <form [formGroup]="studentFormCreate" (ngSubmit)="createStudentWithReactive()">
+      <div class="form-group">
+        <label>Name: </label>
+        <input formControlName="name" type="text" class="form-group" required>
+        <span style="color: red" *ngIf="studentFormCreate.controls.name.touched && studentFormCreate.controls.name.hasError('required')">name not null</span>
+      </div>
+
+      <div class="form-group">
+        <label>Gender: </label>
+        <input formControlName="gender" type="radio" value="0" class="form-group">Female
+        <input formControlName="gender" type="radio" value="1" class="form-group">male
+        <input formControlName="gender" type="radio" value="2" class="form-group">LGBT
+      </div>
+
+      <div class="form-group">
+        <label>Point: </label>
+        <input formControlName="point" type="number" class="form-group">
+        <span style="color: red" *ngIf="studentFormCreate.controls.point.hasError('invalid0')">point not 0></span>
+      </div>
+
+      <button type="submit" class="btn bg-primary">Submit</button>
+    </form>
+  </div>
+</div>

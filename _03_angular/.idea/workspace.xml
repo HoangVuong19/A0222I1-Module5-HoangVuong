@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c5833733-e20e-40ea-8122-1c61c515ddef" name="Changes" comment="done dictionary">
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/browserslist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/e2e/protractor.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/e2e/src/app.po.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/e2e/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/app-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-create/student-create.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-create/student-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-create/student-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-detail/student-detail.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-detail/student-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-detail/student-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-list/student-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-list/student-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/app/student-list/student-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/model/Student.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/service/student.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/tsconfig.spec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_01_practice_angular/angular-practice/tslint.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-overview/src/model/Product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/angular-overview/src/service/product.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_04_case_study/case-study/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-overview/src/app/dictionary-detail/dictionary-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-overview/src/app/dictionary-detail/dictionary-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-overview/src/app/dictionay-page/dictionay-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-overview/src/app/dictionay-page/dictionay-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-overview/src/app/service/dictionary.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-overview/src/service/dictionary.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../_04_case_study/case-study/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../_04_case_study/case-study/src/app/app.module.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IWQBcdwHQZYdB3h8jUX6x8P98t" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/A0222I1-Module5-HoangVuong/_03_angular&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\A0222I1-Module5-HoangVuong\\_03_angular\\angular-overview\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\A0222I1-Module5-HoangVuong\_03_angular\angular-overview\src\app\dictionary" />
+      <recent name="D:\A0222I1-Module5-HoangVuong\_03_angular\angular-overview\src\service" />
+      <recent name="D:\A0222I1-Module5-HoangVuong\_03_angular\angular-overview\src" />
+      <recent name="D:\A0222I1-Module5-HoangVuong\_03_angular\angular-overview\src\assets" />
+      <recent name="D:\A0222I1-Module5-HoangVuong\_03_angular\angular-overview\src\app\hackernews" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5833733-e20e-40ea-8122-1c61c515ddef" name="Changes" comment="" />
+      <created>1670294725036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670294725036</updated>
+      <workItem from="1670294726320" duration="4241000" />
+      <workItem from="1670415691612" duration="5882000" />
+      <workItem from="1670421943366" duration="956000" />
+      <workItem from="1670591114649" duration="1982000" />
+      <workItem from="1670593142891" duration="1977000" />
+      <workItem from="1670679190228" duration="181000" />
+      <workItem from="1670748480822" duration="539000" />
+      <workItem from="1670835193741" duration="276000" />
+      <workItem from="1670835494886" duration="1094000" />
+      <workItem from="1670851521998" duration="15000" />
+      <workItem from="1671021507375" duration="2540000" />
+    </task>
+    <task id="LOCAL-00001" summary="create project angular">
+      <created>1670297807642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670297807642</updated>
+    </task>
+    <task id="LOCAL-00002" summary="done calculator">
+      <created>1670297838115</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670297838115</updated>
+    </task>
+    <task id="LOCAL-00003" summary="config">
+      <created>1670297901245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670297901245</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create project angular">
+      <created>1670297944869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670297944869</updated>
+    </task>
+    <task id="LOCAL-00005" summary="done color">
+      <created>1670298982169</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670298982169</updated>
+    </task>
+    <task id="LOCAL-00006" summary="done hackernews">
+      <created>1670418629122</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670418629122</updated>
+    </task>
+    <task id="LOCAL-00007" summary="done countdown">
+      <created>1670748887282</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670748887282</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done register">
+      <created>1670836605443</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670836605443</updated>
+    </task>
+    <task id="LOCAL-00009" summary="done dictionary">
+      <created>1671023463971</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671023463971</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="angular.json" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="done calculator" />
+    <MESSAGE value="config" />
+    <MESSAGE value="create project angular" />
+    <MESSAGE value="done color" />
+    <MESSAGE value="done hackernews" />
+    <MESSAGE value="done countdown" />
+    <MESSAGE value="done register" />
+    <MESSAGE value="done dictionary" />
+    <option name="LAST_COMMIT_MESSAGE" value="done dictionary" />
+  </component>
+</project>

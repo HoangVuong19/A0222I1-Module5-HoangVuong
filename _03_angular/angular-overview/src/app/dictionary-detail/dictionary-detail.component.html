@@ -1,0 +1,14 @@
+<div class="card border-info mt-4">
+  <div class="card-body">
+    <h4 class="card-title">Dictionary Detail</h4>
+    <div *ngIf="dictionaryDetail; else noData">
+      <div>Name: {{dictionaryDetail.word}}</div>
+      <div>Gender: {{dictionaryDetail.mean}}</div>
+    </div>
+
+    <ng-template #noData>
+      <p style="color: red">No Data</p>
+    </ng-template>
+  </div>
+</div>
+

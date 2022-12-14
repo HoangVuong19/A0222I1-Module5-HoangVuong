@@ -12,6 +12,8 @@ import { CountdownComponent } from './countdown/countdown.component';
 import { RegisterComponent } from './register/register.component';
 import { DictionayPageComponent } from './dictionary/dictionay-page/dictionay-page.component';
 import { DictionaryDetailComponent } from './dictionary/dictionary-detail/dictionary-detail.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductCreateComponent } from './product/product-create/product-create.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DictionaryDetailComponent } from './dictionary/dictionary-detail/dictio
     CountdownComponent,
     RegisterComponent,
     DictionayPageComponent,
-    DictionaryDetailComponent
+    DictionaryDetailComponent,
+    ProductListComponent,
+    ProductCreateComponent
   ],
   imports: [
     BrowserModule,

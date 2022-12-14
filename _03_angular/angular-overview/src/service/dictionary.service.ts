@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {IWord} from "../../model/iword";
+import {IWord} from "../model/iword";
 
 @Injectable({
   providedIn: 'root'

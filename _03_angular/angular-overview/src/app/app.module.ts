@@ -10,8 +10,8 @@ import { ArticleComponent } from './hackernews/article/article.component';
 import { LikeComponent } from './hackernews/like/like.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { RegisterComponent } from './register/register.component';
-import { DictionayPageComponent } from './dictionay-page/dictionay-page.component';
-import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
+import { DictionayPageComponent } from './dictionary/dictionay-page/dictionay-page.component';
+import { DictionaryDetailComponent } from './dictionary/dictionary-detail/dictionary-detail.component';
 
 @NgModule({
   declarations: [

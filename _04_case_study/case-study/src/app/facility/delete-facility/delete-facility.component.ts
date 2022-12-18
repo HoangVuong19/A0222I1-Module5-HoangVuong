@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-delete-facility',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./delete-facility.component.css']
 })
 export class DeleteFacilityComponent implements OnInit {
+  // tslint:disable-next-line:no-input-rename
+  @Input('deleteFacility')
+  nameFacility: string;
 
   constructor() { }
 

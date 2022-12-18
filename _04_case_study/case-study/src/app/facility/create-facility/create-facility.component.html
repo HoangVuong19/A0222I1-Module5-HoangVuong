@@ -3,17 +3,57 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title">Create Facility</h5>
       </div>
       <div class="modal-body">
-        Body
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <form [formGroup]="facilityFormCreate" (ngSubmit)="createFacility()">
+          <div class="form-group">
+            <label>Tên dịch vụ: </label>
+            <input formControlName="name" type="text" class="form-group" required>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.name.touched && facilityFormCreate.controls.name.hasError('required')">name is not null</span>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.name.touched && facilityFormCreate.controls.name.hasError('pattern')">name is not format</span>
+          </div>
+
+          <div class="form-group">
+            <label>Diện tích: </label>
+            <input formControlName="area" type="number" class="form-group" required>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.area.touched && facilityFormCreate.controls.area.hasError('required')">area is not null</span>
+
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.area.touched && facilityFormCreate.controls.area.hasError('min')">area > 0</span>
+          </div>
+
+          <div class="form-group">
+            <label>Giá: </label>
+            <input formControlName="price" type="number" class="form-group" required>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.price.touched && facilityFormCreate.controls.price.hasError('required')">price is not null</span>
+          </div>
+
+          <div class="form-group">
+            <label>Số lượng người: </label>
+            <input formControlName="maximum" type="number" class="form-group" required>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.maximum.touched && facilityFormCreate.controls.maximum.hasError('required')">maximum is not null</span>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.maximum.touched && facilityFormCreate.controls.maximum.hasError('min')">maximum > 0</span>
+          </div>
+
+          <div class="form-group">
+            <label>Loại: </label>
+            <input formControlName="type" type="radio" value="luxury" class="form-group">Luxury
+            <input formControlName="type" type="radio" value="min" class="form-group">Min
+            <input formControlName="type" type="radio" value="flex" class="form-group">Flex
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn bg-primary">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

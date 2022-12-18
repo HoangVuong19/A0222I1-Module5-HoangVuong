@@ -34,4 +34,8 @@ export class FacilityService {
   set facility(value: Facility[]) {
     this.facilities = value;
   }
+
+  save(facility: Facility) {
+    this.facilities.unshift(facility);
+  }
 }

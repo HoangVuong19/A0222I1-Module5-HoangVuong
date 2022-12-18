@@ -9,6 +9,7 @@ import {FacilityService} from '../../service/facility.service';
 })
 export class FacilityComponent implements OnInit {
   facilities: Facility[] | undefined;
+  facilityName: string | undefined;
 
   constructor(private facilityService: FacilityService) { }
 
@@ -18,5 +19,9 @@ export class FacilityComponent implements OnInit {
 
   private getAllFacilities() {
     this.facilities = this.facilityService.facility;
+  }
+
+  deleteFacility(id: number, name: string) {
+    this.facilityName = name;
   }
 }

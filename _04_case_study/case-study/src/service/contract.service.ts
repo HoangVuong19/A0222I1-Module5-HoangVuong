@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Customer} from '../model/Customer';
 import {Contract} from '../model/Contract';
 
 @Injectable({
@@ -22,5 +21,9 @@ export class ContractService {
 
   set contract(value: Contract[]) {
     this.contracts = value;
+  }
+
+  save(contract: Contract) {
+    this.contracts.unshift(contract);
   }
 }

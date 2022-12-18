@@ -11,6 +11,7 @@
       <tr>
         <th>#</th>
         <th>Name</th>
+        <th>Code</th>
         <th>DOB</th>
         <th>Gender</th>
         <th>CCCD/CMND</th>
@@ -25,6 +26,7 @@
       <tr *ngFor="let item of customers; let i = index">
         <td>{{i+1}}</td>
         <td>{{item.name}}</td>
+        <td>{{item.code}}</td>
         <td>{{item.dob | date: 'dd-MM-yyyy'}}</td>
         <td [ngSwitch]="item.gender">
           <span *ngSwitchCase="0">Female</span>
@@ -37,10 +39,10 @@
         <td>{{item.type}}</td>
         <td>{{item.address}}</td>
         <td>
-          <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modelId">
+          <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#modelId2">
             <i class="fa-solid fa-highlighter"></i>
           </button>
-          <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modelId">
+          <button (click)="deleteCustomer(item.id, item.code)" type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modelId3">
             <i class="fa-solid fa-eraser"></i>
           </button>
         </td>
@@ -51,4 +53,4 @@
 </div>
 <app-create-customer></app-create-customer>
 <app-edit-customer></app-edit-customer>
-<app-delete-customer></app-delete-customer>
+<app-delete-customer [inputCode]="codeCustomer"></app-delete-customer>

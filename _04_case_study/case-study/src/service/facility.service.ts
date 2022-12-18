@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import {Contract} from '../model/Contract';
 import {Facility} from '../model/facility';
 
 @Injectable({

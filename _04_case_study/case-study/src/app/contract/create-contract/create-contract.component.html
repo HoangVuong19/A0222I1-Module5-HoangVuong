@@ -3,17 +3,42 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title">Create Contract</h5>
       </div>
       <div class="modal-body">
-        Body
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <form [formGroup]="contractFromCreate" (ngSubmit)="createContract()">
+          <div class="form-group">
+            <label>Mã hợp đồng: </label>
+            <input formControlName="code" type="text" class="form-group">
+          </div>
+
+          <div class="form-group">
+            <label>Start Date: </label>
+            <input formControlName="startDate" type="date" class="form-group">
+          </div>
+
+          <div class="form-group">
+            <label>End Date: </label>
+            <input formControlName="endDate" type="date" class="form-group">
+          </div>
+
+          <div class="form-group">
+            <label>Down Payment: </label>
+            <input formControlName="downPayment" type="number" class="form-group">
+            <span style="color: red"
+                  *ngIf="contractFromCreate.controls.downPayment.touched && contractFromCreate.controls.downPayment.hasError('min')">downPayment > 0</span>
+          </div>
+
+          <div class="form-group">
+            <label>Total Payment: </label>
+            <input formControlName="totalPayment" type="number" class="form-group">
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn bg-primary">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

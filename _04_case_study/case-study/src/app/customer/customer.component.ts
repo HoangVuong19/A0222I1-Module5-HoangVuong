@@ -9,6 +9,7 @@ import {CustomerService} from '../../service/customer.service';
 })
 export class CustomerComponent implements OnInit {
   customers: Customer[] | undefined;
+  codeCustomer: string | undefined;
 
   constructor(private customerService: CustomerService) { }
 
@@ -20,4 +21,7 @@ export class CustomerComponent implements OnInit {
     this.customers = this.customerService.customer;
   }
 
+  deleteCustomer(id: number, code: string) {
+    this.codeCustomer = code;
+  }
 }

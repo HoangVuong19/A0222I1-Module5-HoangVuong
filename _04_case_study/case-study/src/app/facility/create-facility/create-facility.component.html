@@ -8,7 +8,7 @@
       <div class="modal-body">
         <form [formGroup]="facilityFormCreate" (ngSubmit)="createFacility()">
           <div class="form-group">
-            <label>Tên dịch vụ: </label>
+            <label class="form-label">Tên dịch vụ: </label>
             <input formControlName="name" type="text" class="form-group" required>
             <span style="color: red"
                   *ngIf="facilityFormCreate.controls.name.touched && facilityFormCreate.controls.name.hasError('required')">name is not null</span>
@@ -17,7 +17,7 @@
           </div>
 
           <div class="form-group">
-            <label>Diện tích: </label>
+            <label class="form-label">Diện tích: </label>
             <input formControlName="area" type="number" class="form-group" required>
             <span style="color: red"
                   *ngIf="facilityFormCreate.controls.area.touched && facilityFormCreate.controls.area.hasError('required')">area is not null</span>
@@ -27,14 +27,14 @@
           </div>
 
           <div class="form-group">
-            <label>Giá: </label>
+            <label class="form-label">Giá: </label>
             <input formControlName="price" type="number" class="form-group" required>
             <span style="color: red"
                   *ngIf="facilityFormCreate.controls.price.touched && facilityFormCreate.controls.price.hasError('required')">price is not null</span>
           </div>
 
           <div class="form-group">
-            <label>Số lượng người: </label>
+            <label class="form-label">Số lượng người: </label>
             <input formControlName="maximum" type="number" class="form-group" required>
             <span style="color: red"
                   *ngIf="facilityFormCreate.controls.maximum.touched && facilityFormCreate.controls.maximum.hasError('required')">maximum is not null</span>
@@ -43,7 +43,14 @@
           </div>
 
           <div class="form-group">
-            <label>Loại: </label>
+            <label class="form-label">Avatar</label>
+            <input formControlName="image" type="file" class="form-group" required>
+            <span style="color: red"
+                  *ngIf="facilityFormCreate.controls.image.touched && facilityFormCreate.controls.image.hasError('required')">image is not null</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Loại: </label>
             <input formControlName="type" type="radio" value="luxury" class="form-group">Luxury
             <input formControlName="type" type="radio" value="min" class="form-group">Min
             <input formControlName="type" type="radio" value="flex" class="form-group">Flex

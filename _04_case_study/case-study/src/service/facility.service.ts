@@ -36,6 +36,14 @@ export class FacilityService {
   }
 
   save(facility: Facility) {
+    facility.image = facility.image.split('\\')[2];
+    facility.image = `../../assets/facility-image/${facility.image}`;
     this.facilities.unshift(facility);
+  }
+
+  findById(id: number) {
+    // @ts-ignore
+    return this.facilities.filter(x => x.id === id)[0];
+    // return this.facilities.indexOf(id - 1);
   }
 }

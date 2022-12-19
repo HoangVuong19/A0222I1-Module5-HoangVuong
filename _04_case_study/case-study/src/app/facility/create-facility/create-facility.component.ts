@@ -19,6 +19,7 @@ export class CreateFacilityComponent implements OnInit {
         area: ['', [Validators.required, Validators.min(0)]],
         price: ['', [Validators.required]],
         maximum: ['', [Validators.required, Validators.min(0)]],
+        image: ['', [Validators.required]],
         type: ['', [Validators.required]]
       });
   }

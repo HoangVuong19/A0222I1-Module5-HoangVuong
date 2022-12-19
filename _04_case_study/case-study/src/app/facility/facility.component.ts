@@ -11,6 +11,7 @@ export class FacilityComponent implements OnInit {
   facilities: Facility[] | undefined;
   facilityName: string | undefined;
 
+  facility: Facility | undefined;
   constructor(private facilityService: FacilityService) { }
 
   ngOnInit(): void {
@@ -24,4 +25,8 @@ export class FacilityComponent implements OnInit {
   deleteFacility(id: number, name: string) {
     this.facilityName = name;
   }
+
+  edit(id: number) {
+    this.facility = this.facilityService.findById(id);
+   }
 }

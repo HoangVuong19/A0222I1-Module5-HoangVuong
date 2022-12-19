@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class DeleteFacilityComponent implements OnInit {
   // tslint:disable-next-line:no-input-rename
   @Input('deleteFacility')
-  nameFacility: string;
+  name: string;
 
   constructor() { }
 

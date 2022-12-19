@@ -19,7 +19,7 @@ export class FacilityComponent implements OnInit {
   }
 
   private getAllFacilities() {
-    this.facilities = this.facilityService.facility;
+    this.facilities = this.facilityService.findAll();
   }
 
   deleteFacility(id: number, name: string) {

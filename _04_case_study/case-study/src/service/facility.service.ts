@@ -46,4 +46,8 @@ export class FacilityService {
     return this.facilities.filter(x => x.id === id)[0];
     // return this.facilities.indexOf(id - 1);
   }
+
+  findAll() {
+    return this.facilities;
+  }
 }

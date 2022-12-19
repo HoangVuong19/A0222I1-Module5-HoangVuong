@@ -38,5 +38,6 @@
   </nav>
 </div>
 <app-create-facility></app-create-facility>
-<app-edit-facility [editFacility] = "facility"></app-edit-facility>
+<app-edit-facility *ngIf="facility" [editFacility] = "facility"></app-edit-facility>
 <app-delete-facility [deleteFacility]="facilityName"></app-delete-facility>
+

@@ -14,6 +14,9 @@ import { DictionayPageComponent } from './dictionary/dictionay-page/dictionay-pa
 import { DictionaryDetailComponent } from './dictionary/dictionary-detail/dictionary-detail.component';
 import { ProductListComponent } from './product/product-list/product-list.component';
 import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { TodoComponent } from './todo/todo.component';
+import { ProductEditComponent } from './product/product-edit/product-edit.component';
+import { ProductDeleteComponent } from './product/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ProductCreateComponent } from './product/product-create/product-create.
     DictionayPageComponent,
     DictionaryDetailComponent,
     ProductListComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    TodoComponent,
+    ProductEditComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,

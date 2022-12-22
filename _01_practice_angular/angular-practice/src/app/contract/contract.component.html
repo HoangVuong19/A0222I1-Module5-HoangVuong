@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Contract List</h4>
+    <div>
+      <button routerLink="/create" type="button" class="btn btn-primary btn-lg">
+        Create Contract
+      </button>
+    </div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Code</th>
+        <th>Create Date</th>
+        <th>Content</th>
+        <th>Price</th>
+        <th>Type</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of contracts; let i = index">
+        <td>{{i+1}}</td>
+        <td>{{item.code}}</td>
+        <td>{{item.createDate | date: 'dd-MM-yyyy'}}</td>
+        <td>{{item.content}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.type}}</td>
+        <td>
+          <button [routerLink]="['/edit',item.id]" type="button" class="btn btn-warning btn-lg">
+            <i class="fa-solid fa-highlighter"></i>
+          </button>
+          <button (click)="deleteContract(item.id)" type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modelId">
+            <i class="fa-solid fa-eraser"></i>
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<app-contract-delete *ngIf="contract" [contractDelete] = "contract"></app-contract-delete>

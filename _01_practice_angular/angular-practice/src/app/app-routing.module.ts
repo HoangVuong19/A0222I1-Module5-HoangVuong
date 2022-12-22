@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {StudentListComponent} from './student-list/student-list.component';
-import {StudentCreateComponent} from './student-create/student-create.component';
-import {StudentDetailComponent} from './student-detail/student-detail.component';
+import {ContractCreateComponent} from './contract/contract-create/contract-create.component';
+import {ContractEditComponent} from './contract/contract-edit/contract-edit.component';
+import {ContractComponent} from './contract/contract.component';
 
 
 const routes: Routes = [
-  {path: 'home', component: StudentListComponent},
-  {path: 'create', component: StudentCreateComponent},
-  {path: 'detail/:index', component: StudentDetailComponent}
+  {path: '', component: ContractComponent},
+  {path: 'create', component: ContractCreateComponent},
+  {path: 'edit/:id', component: ContractEditComponent}
 ];
 
 @NgModule({

@@ -3,20 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { StudentDetailComponent } from './student-detail/student-detail.component';
-import { StudentCreateComponent } from './student-create/student-create.component';
 import {AppRoutingModule} from './app-routing.module';
-import { StudentListComponent } from './student-list/student-list.component';
+import {HttpClientModule} from '@angular/common/http';
+import { ContractCreateComponent } from './contract/contract-create/contract-create.component';
+import { ContractEditComponent } from './contract/contract-edit/contract-edit.component';
+import { ContractDeleteComponent } from './contract/contract-delete/contract-delete.component';
+import { ContractComponent } from './contract/contract.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentDetailComponent,
-    StudentCreateComponent,
-    StudentListComponent
+    ContractCreateComponent,
+    ContractEditComponent,
+    ContractDeleteComponent,
+    ContractComponent
   ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         FormsModule,
         ReactiveFormsModule

@@ -11,7 +11,7 @@ import {ActivatedRoute, ParamMap, Router} from "@angular/router";
 export class ContractEditComponent implements OnInit {
 
   formEdit: FormGroup;
-  id: number;
+  id: number | undefined;
   constructor(private contractService: ContractService, private activatedRoute: ActivatedRoute, private formBuilder: FormBuilder,
               private router: Router) { }
 

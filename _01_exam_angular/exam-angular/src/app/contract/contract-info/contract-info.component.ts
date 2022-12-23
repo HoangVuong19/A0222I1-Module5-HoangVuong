@@ -10,8 +10,8 @@ import {Validators} from "@angular/forms";
   styleUrls: ['./contract-info.component.css']
 })
 export class ContractInfoComponent implements OnInit {
-  contract: Contract;
-  id: number;
+  contract: Contract = {};
+  id: number | undefined;
   constructor(private contractService: ContractService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {

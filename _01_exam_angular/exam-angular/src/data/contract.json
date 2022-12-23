@@ -1,0 +1,44 @@
+{
+  "contracts": [
+    {
+      "code": "CT001",
+      "createDate": "2022-12-14",
+      "content": "Tìm hiểu về JSON",
+      "price": 120000,
+      "type": "gold",
+      "id": 1
+    },
+    {
+      "code": "rttrrtrt",
+      "createDate": "2022-12-27",
+      "content": "aaaaaaa",
+      "price": 120000,
+      "type": "silver",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "code": "CT003",
+      "createDate": "2022-12-12",
+      "content": "Tìm hiểu về JSON",
+      "price": 120000,
+      "type": "vip"
+    },
+    {
+      "id": 4,
+      "code": "CT004",
+      "createDate": "2022-12-12",
+      "content": "Tìm hiểu về JSON",
+      "price": 120000,
+      "type": "vip"
+    },
+    {
+      "id": 5,
+      "code": "CT005",
+      "createDate": "2022-12-12",
+      "content": "Tìm hiểu về JSON",
+      "price": 120000,
+      "type": "vip"
+    }
+  ]
+}

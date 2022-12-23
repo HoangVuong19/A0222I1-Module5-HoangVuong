@@ -1,0 +1,48 @@
+<div class="container mt-5">
+  <h3>Create Contract</h3>
+  <form [formGroup]="formCreate" (ngSubmit)="createContract()">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputContract">Mã Hợp Đồng:</label>
+        <input type="text" formControlName="code" class="form-control" id="inputContract" required>
+        <span style="color: red"
+              *ngIf="formCreate.controls.code.touched && formCreate.controls.code.hasError('required')">code is not null</span>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputDate">Ngày Tạo:</label>
+        <input type="date" formControlName="createDate" class="form-control" id="inputDate" required>
+        <span style="color: red"
+              *ngIf="formCreate.controls.createDate.touched && formCreate.controls.createDate.hasError('required')">createDate is not null</span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputContent">Nội Dung:</label>
+      <textarea formControlName="content" class="form-control" id="inputContent" rows="3" required></textarea>
+      <span style="color: red"
+            *ngIf="formCreate.controls.content.touched && formCreate.controls.content.hasError('required')">content is not null</span>
+    </div>
+    <div class="form-group">
+      <label for="inputPrice">Giá:</label>
+      <input type="number" formControlName="price" class="form-control" id="inputPrice" required>
+      <span style="color: red"
+            *ngIf="formCreate.controls.price.touched && formCreate.controls.price.hasError('required')">price is not null</span>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="inputType">Loại:</label>
+        <select formControlName="type" class="form-control" id="inputType" required>
+          <option value="" selected>--select--</option>
+          <option value="vip">Vip</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+        </select>
+        <span style="color: red"
+              *ngIf="formCreate.controls.type.touched && formCreate.controls.type.hasError('required')">type is not null</span>
+      </div>
+    </div>
+    <button type="submit" routerLink="/" class="btn btn-danger">Quay lại</button>
+    <button type="submit" class="btn btn-primary">Tạo</button>
+  </form>
+</div>
+
+

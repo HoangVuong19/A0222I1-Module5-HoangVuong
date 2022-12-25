@@ -12,7 +12,8 @@ export class ContractComponent implements OnInit {
   contract: Contract = {};
   page: number = 1;
   totalRecords: number = 0;
-
+  searchText: any;
+  
   constructor(private contractService: ContractService) {
   }
 

@@ -11,6 +11,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ContractInfoComponent } from './contract/contract-info/contract-info.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import {NgpSortModule} from "ngp-sort-pipe";
 
 @NgModule({
   declarations: [
@@ -20,15 +21,16 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ContractEditComponent,
     ContractInfoComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgxPaginationModule,
-    Ng2SearchPipeModule
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        FormsModule,
+        ReactiveFormsModule,
+        NgxPaginationModule,
+        Ng2SearchPipeModule,
+        NgpSortModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

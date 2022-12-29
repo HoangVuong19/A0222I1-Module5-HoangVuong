@@ -9,10 +9,24 @@
               *ngIf="formCreate.controls.code.touched && formCreate.controls.code.hasError('required')">code is not null</span>
       </div>
       <div class="form-group col-md-6">
-        <label for="inputDate">Ngày Tạo:</label>
-        <input type="date" formControlName="createDate" class="form-control" id="inputDate" required>
-        <span style="color: red"
-              *ngIf="formCreate.controls.createDate.touched && formCreate.controls.createDate.hasError('required')">createDate is not null</span>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCreateDate">Ngày Tạo:</label>
+            <input type="date" formControlName="createDate" class="form-control" id="inputCreateDate" required>
+            <span style="color: red"
+                  *ngIf="formCreate.controls.createDate.touched && formCreate.controls.createDate.hasError('required')">createDate is not null</span>
+            <span style="color: red"
+                  *ngIf="formCreate.controls.createDate.hasError('presentAndFuture')">createDate is not presentAndFuture</span>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEndDate">Ngày Kết thúc:</label>
+            <input type="date" formControlName="endDate" class="form-control" id="inputEndDate" required>
+            <span style="color: red"
+                  *ngIf="formCreate.controls.endDate.touched && formCreate.controls.endDate.hasError('required')">endDate is not null</span>
+            <span style="color: red"
+                  *ngIf="formCreate.controls.endDate.hasError('presentAndFuture')">endDate is not presentAndFuture</span>
+          </div>
+        </div>
       </div>
     </div>
     <div class="form-group">

@@ -26,7 +26,7 @@
       </thead>
       <tbody>
       <tr
-        *ngFor="let item of contracts | filter:searchText | paginate:{totalItems: totalRecords, itemsPerPage: 3, currentPage: page}; let i = index">
+        *ngFor="let item of contracts | sortBy:'desc':'price' | filter:searchText | paginate:{totalItems: totalRecords, itemsPerPage: 3, currentPage: page}; let i = index">
         <td>{{i + 1}}</td>
         <td>{{item.code}}</td>
         <td>{{item.createDate | date: 'dd-MM-yyyy'}}</td>

@@ -1,0 +1,48 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "cusId": 1,
+      "cusName": "Truong Tan Hai",
+      "createDate": "2022-12-30",
+      "reTime": "2022-12-30",
+      "deadTime": "3 tháng",
+      "price": 12000064919215,
+      "lai": 3,
+      "bonus": "áo mưa"
+    },
+    {
+      "id": 2,
+      "cusId": 2,
+      "cusName": "Doan Trung",
+      "createDate": "2022-12-30",
+      "reTime": "2022-12-30",
+      "deadTime": "6 tháng",
+      "price": 12000000,
+      "lai": 3,
+      "bonus": "áo gió"
+    },
+    {
+      "id": 3,
+      "cusId": 3,
+      "cusName": "Abc",
+      "createDate": "2022-12-30",
+      "reTime": "2022-12-30",
+      "deadTime": "5 năm",
+      "price": 120000,
+      "lai": 3,
+      "bonus": "áo mưa"
+    },
+    {
+      "id": 4,
+      "cusId": 1,
+      "cusName": "Truong Tan Hai",
+      "createDate": "2022-12-30",
+      "reTime": "2022-12-30",
+      "deadTime": "5 năm",
+      "price": 120000,
+      "lai": 3,
+      "bonus": "áo mưa"
+    }
+  ]
+}

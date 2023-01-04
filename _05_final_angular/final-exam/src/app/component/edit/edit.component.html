@@ -1,0 +1,68 @@
+<div class="container mt-5">
+  <h3>Edit Book</h3>
+  <form [formGroup]="formEdit" (ngSubmit)="editBook(id)">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputId">Mã số sổ:</label>
+        <input disabled type="text" formControlName="id" class="form-control" id="inputId">
+        </div>
+      <div class="form-group col-md-6">
+        <label for="inputCusId">Mã khách hàng:</label>
+        <input disabled type="text" formControlName="cusId" class="form-control" id="inputCusId">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputCusName">Tên khách hàng:</label>
+      <input type="text" formControlName="cusName" class="form-control" id="inputCusName" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.cusName.hasError('required')">cusName is not null</span>
+      <span style="color: red"
+            *ngIf="formEdit.controls.cusName.hasError('pattern')">cusName is not format</span>
+    </div>
+    <div class="form-group">
+      <label for="inputDate">Ngày mở sổ:</label>
+      <input type="date" formControlName="createDate" class="form-control" id="inputDate" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.createDate.hasError('required')">createDate is not null</span>
+    </div>
+    <div class="form-group">
+      <label for="inputReTime">Thời gian bắt đầu gửi:</label>
+      <input type="date" formControlName="reTime" class="form-control" id="inputReTime" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.reTime.hasError('required')">reTime is not null</span>
+      <span style="color: red"
+            *ngIf="formEdit.controls.reTime.hasError('presentAndFuture')">reTime is not format</span>
+
+    </div>
+    <div class="form-group">
+      <label for="inputDead">Kỳ hạn:</label>
+      <input type="text" formControlName="deadTime" class="form-control" id="inputDead" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.deadTime.hasError('required')">deadTime is not null</span>
+    </div>
+    <div class="form-group">
+      <label for="inputPrice">Số tiền gửi:</label>
+      <input type="number" formControlName="price" class="form-control" id="inputPrice" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.price.hasError('required')">price is not null</span>
+      <span style="color: red"
+            *ngIf="formEdit.controls.price.hasError('min')">price < 10000000</span>
+
+    </div>
+    <div class="form-group">
+      <label for="inputLai">Lãi suất:</label>
+      <input type="number" formControlName="lai" class="form-control" id="inputLai" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.lai.hasError('required')">lai is not null</span>
+    </div>
+    <div class="form-group">
+      <label for="inputBonus">Ưu đãi:</label>
+      <input type="text" formControlName="bonus" class="form-control" id="inputBonus" required>
+      <span style="color: red"
+            *ngIf="formEdit.controls.bonus.hasError('required')">bonus is not null</span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sửa</button>
+    <button type="submit" routerLink="/" class="btn btn-danger">Quay lại</button>
+  </form>
+</div>

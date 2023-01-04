@@ -45,5 +45,3 @@ export class ListComponent implements OnInit {
     this.page = even;
   }
 }
-
-console.log('vòng lặp bị lỗi mà không biết nguyên do, kiểm tra lại vòng lặp một lần nữa ch')
